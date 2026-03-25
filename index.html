@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Space Interiors — Designing Spaces That Inspire Living</title>
+  <meta name="description" content="Aura Space Interiors is a Bangalore-based premium interior design studio specialising in home interiors, modular kitchens, office design, and renovations." />
+  <meta name="keywords" content="interior design Bangalore, home interiors, modular kitchen, office design, renovation, luxury interiors" />
+  <meta property="og:title" content="Aura Space Interiors — Premium Design Studio, Bangalore" />
+  <meta property="og:description" content="Designing Spaces That Inspire Living — Premium Interior Design, Bangalore." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     THEME SWITCHER PANEL
+══════════════════════════════════ -->
+<div class="theme-panel" id="themePanel">
+  <button class="theme-panel-toggle" id="themePanelToggle" aria-label="Customize theme">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M5.34 18.66l-1.41 1.41M2 12h2m16 0h2M5.34 5.34L3.93 3.93M20.48 20.07l-1.41-1.41M12 2v2m0 16v2"/></svg>
+  </button>
+  <div class="theme-panel-body" id="themePanelBody">
+    <div class="theme-panel-title">Customize Theme</div>
+    <div class="theme-swatches">
+      <button class="swatch active" data-theme="dark" style="background:#1A1410;" title="Classic Dark" aria-label="Dark theme"></button>
+      <button class="swatch" data-theme="light" style="background:#F8F5F0;" title="Light Ivory" aria-label="Light theme"></button>
+      <button class="swatch" data-theme="forest" style="background:#0D1F1A;" title="Forest Dark" aria-label="Forest theme"></button>
+      <button class="swatch" data-theme="slate" style="background:#0E1420;" title="Midnight Blue" aria-label="Slate theme"></button>
+      <button class="swatch" data-theme="rose" style="background:#1F1015;" title="Rose Noir" aria-label="Rose theme"></button>
+      <button class="swatch" data-theme="sand" style="background:#F2EDE4;" title="Sand Light" aria-label="Sand theme"></button>
+    </div>
+    <div class="theme-panel-section">Mode</div>
+    <div class="theme-mode-btns">
+      <button class="mode-btn active" id="modeDark">◐ Dark</button>
+      <button class="mode-btn" id="modeLight">○ Light</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     NAVBAR
+══════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo" aria-label="Aura Space Interiors">
+      <span class="logo-icon">✦</span>
+      <div class="logo-text">
+        <span class="logo-main">AURA SPACE</span>
+        <span class="logo-sub">Interiors · Bangalore</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="tel:+919876543210" class="nav-phone">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        +91 98765 43210
+      </a>
+      <a href="#contact" class="btn btn-gold"><span>Free Consultation</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog">
+  <div class="mobile-menu-inner">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <div class="mobile-logo">AURA SPACE</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-contact">
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:hello@auraspaceinteriors.com">hello@auraspaceinteriors.com</a>
+    </div>
+    <a href="#contact" class="btn btn-gold mobile-cta">Book Consultation</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     HERO
+══════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=85&auto=format&fit=crop')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      <span>Bangalore's Premier Design Studio</span>
+      <span class="eyebrow-line"></span>
+    </div>
+    <h1 class="hero-heading">
+      Transform Your<br>Space Into a<br><em>Masterpiece</em>
+    </h1>
+    <p class="hero-sub">
+      Premium interior design crafted for modern living — where aesthetics meets functionality, and every detail tells your story.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-outline"><span>Explore Work</span></a>
+      <a href="#contact" class="btn btn-gold"><span>Book Consultation</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num"><span data-count="250" data-suffix="+">0+</span></div>
+      <div class="stat-label">Projects Done</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span data-count="8" data-suffix="+">0+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span data-count="98" data-suffix="%">0%</span></div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span data-count="15" data-suffix="+">0+</span></div>
+      <div class="stat-label">Design Awards</div>
+    </div>
+  </div>
+
+  <!-- Slide indicators -->
+  <div class="slide-dots" aria-hidden="true">
+    <button class="slide-dot active" data-slide="0"></button>
+    <button class="slide-dot" data-slide="1"></button>
+    <button class="slide-dot" data-slide="2"></button>
+    <button class="slide-dot" data-slide="3"></button>
+  </div>
+
+  <div class="scroll-cue">
+    <div class="scroll-cue-line"></div>
+    <span>Discover</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     MARQUEE TICKER
+══════════════════════════════════ -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Home Interiors</span><span class="dot">✦</span>
+    <span>Modular Kitchens</span><span class="dot">✦</span>
+    <span>Office Design</span><span class="dot">✦</span>
+    <span>Luxury Renovations</span><span class="dot">✦</span>
+    <span>3D Visualisation</span><span class="dot">✦</span>
+    <span>Space Planning</span><span class="dot">✦</span>
+    <span>Custom Furniture</span><span class="dot">✦</span>
+    <span>Vastu Compliance</span><span class="dot">✦</span>
+    <span>Home Interiors</span><span class="dot">✦</span>
+    <span>Modular Kitchens</span><span class="dot">✦</span>
+    <span>Office Design</span><span class="dot">✦</span>
+    <span>Luxury Renovations</span><span class="dot">✦</span>
+    <span>3D Visualisation</span><span class="dot">✦</span>
+    <span>Space Planning</span><span class="dot">✦</span>
+    <span>Custom Furniture</span><span class="dot">✦</span>
+    <span>Vastu Compliance</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     ABOUT
+══════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=85&auto=format&fit=crop" alt="Aura Space team at work" loading="lazy" />
+          <div class="about-img-overlay"></div>
+        </div>
+        <div class="about-img-secondary">
+          <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?w=500&q=85&auto=format&fit=crop" alt="Interior design detail" loading="lazy" />
+        </div>
+        <div class="about-badge">
+          <strong>8+</strong>
+          <span>Years of<br>Excellence</span>
+        </div>
+        <div class="about-award">
+          <span>🏆</span>
+          <div>
+            <div>Best Interior Studio</div>
+            <div>Karnataka 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal reveal-delay-2">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Design Born from<br><em>Passion &amp; Purpose</em></h2>
+        <p class="section-subtitle" style="margin-bottom:20px;">
+          Founded in 2016 in the heart of Bangalore, Aura Space Interiors was born from a belief that great design transforms not just spaces — but the way people feel and live within them.
+        </p>
+        <p class="section-subtitle" style="margin-bottom:32px;">
+          Our multidisciplinary team of 28 designers, architects, and craftspeople work collaboratively to create spaces that are uniquely yours — balancing beauty with function, luxury with liveability. From cosy apartments to sprawling villas and corporate offices, we've transformed over 250 spaces across Bangalore.
+        </p>
+
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-icon">🎨</div>
+            <div>
+              <div class="value-title">Tailored Aesthetics</div>
+              <div class="value-desc">Every project begins with listening. We design around your lifestyle, personality, and aspirations.</div>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">⚙️</div>
+            <div>
+              <div class="value-title">Functional Brilliance</div>
+              <div class="value-desc">Beautiful spaces that work flawlessly — smart layouts, smart storage, smart living.</div>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">💎</div>
+            <div>
+              <div class="value-title">Premium Craftsmanship</div>
+              <div class="value-desc">We partner with the finest material suppliers and skilled artisans across Bangalore.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="#contact" class="btn btn-primary"><span>Start Your Journey</span></a>
+          <a href="#projects" class="btn-text-link">View Our Work →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     SERVICES
+══════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div class="reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Signature<br>Design Services</h2>
+      </div>
+      <p class="section-subtitle reveal reveal-delay-2">
+        From concept to completion, we offer end-to-end interior design solutions tailored to every space and every budget.
+      </p>
+    </div>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card reveal" data-num="01">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?w=800&q=80&auto=format&fit=crop" alt="Home Interior Design" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">🏠</span>
+        <h3 class="service-name">Home Interior Design</h3>
+        <p class="service-desc">Complete interior solutions for apartments and villas — living spaces, bedrooms, and dining areas designed to reflect your personal style and elevate everyday living.</p>
+        <div class="service-tags">
+          <span>Living Rooms</span>
+          <span>Bedrooms</span>
+          <span>Dining Areas</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1" data-num="02">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&auto=format&fit=crop" alt="Modular Kitchen Design" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">🍳</span>
+        <h3 class="service-name">Modular Kitchen</h3>
+        <p class="service-desc">Intelligently designed modular kitchens that maximise storage, ease of use, and aesthetics — available in every finish from matte lacquer to high-gloss acrylic.</p>
+        <div class="service-tags">
+          <span>Modular Units</span>
+          <span>Island Kitchens</span>
+          <span>Pantry Design</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2" data-num="03">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format&fit=crop" alt="Office Interior Design" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">💼</span>
+        <h3 class="service-name">Office Design</h3>
+        <p class="service-desc">Modern, productive workspace environments for startups and corporates — designed to inspire collaboration, focus, and reinforce brand identity at every touchpoint.</p>
+        <div class="service-tags">
+          <span>Workspaces</span>
+          <span>Cabins</span>
+          <span>Meeting Rooms</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-3" data-num="04">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80&auto=format&fit=crop" alt="Renovation and Makeover" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">🔨</span>
+        <h3 class="service-name">Renovation &amp; Makeover</h3>
+        <p class="service-desc">Complete space transformations — from minor refreshes and repaints to full structural renovations that breathe extraordinary new life into existing spaces.</p>
+        <div class="service-tags">
+          <span>Full Reno</span>
+          <span>Partial Refresh</span>
+          <span>Smart Upgrades</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal" data-num="05">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=800&q=80&auto=format&fit=crop" alt="3D Visualisation Service" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">🖥️</span>
+        <h3 class="service-name">3D Visualisation</h3>
+        <p class="service-desc">Photorealistic 3D renders so you see your dream space before a single nail is hammered. Approve with complete confidence and clarity.</p>
+        <div class="service-tags">
+          <span>Walkthroughs</span>
+          <span>Still Renders</span>
+          <span>VR Tours</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1" data-num="06">
+      <div class="service-card-img">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80&auto=format&fit=crop" alt="Custom Furniture Design" loading="lazy" />
+      </div>
+      <div class="service-overlay"></div>
+      <div class="service-content">
+        <span class="service-icon">🛋️</span>
+        <h3 class="service-name">Custom Furniture</h3>
+        <p class="service-desc">Bespoke furniture crafted to your exact dimensions and finish preferences — from statement sofas to built-in wardrobes and custom dining tables.</p>
+        <div class="service-tags">
+          <span>Sofas &amp; Seating</span>
+          <span>Wardrobes</span>
+          <span>TV Units</span>
+        </div>
+        <a href="#contact" class="service-link">Get a Quote →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     PROJECTS
+══════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div class="reveal">
+        <span class="section-label">Our Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="filter-tabs reveal reveal-delay-2" role="tablist">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living Room</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+        <button class="filter-btn" data-filter="villa">Villa</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-item reveal" data-category="living">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=900&q=80&auto=format&fit=crop" alt="Prestige Lakeside Villa Living Room" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Living Room</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-name">Prestige Lakeside Villa</h3>
+          <p class="project-detail">Whitefield, Bangalore · 3,200 sq ft</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal reveal-delay-1" data-category="kitchen">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&auto=format&fit=crop" alt="Sobha City Apartment Kitchen" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Modular Kitchen</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-name">Sobha City Apartment</h3>
+          <p class="project-detail">Hebbal, Bangalore · Premium 3BHK</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item project-item--wide reveal reveal-delay-2" data-category="office">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&auto=format&fit=crop" alt="TechVerse HQ Office Design" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Office Design</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">TechVerse HQ</h3>
+          <p class="project-detail">Koramangala, Bangalore · 5,000 sq ft</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal" data-category="bedroom">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80&auto=format&fit=crop" alt="Grand Residential Bedroom" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Master Bedroom</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">The Grand Residential</h3>
+          <p class="project-detail">Indiranagar, Bangalore · 4BHK Villa</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal reveal-delay-1" data-category="villa">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&auto=format&fit=crop" alt="Greenfields Penthouse" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Full Home</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">Greenfields Penthouse</h3>
+          <p class="project-detail">JP Nagar, Bangalore · 4,800 sq ft</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item project-item--tall reveal reveal-delay-2" data-category="living">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80&auto=format&fit=crop" alt="Sadashivanagar Luxury Transformation" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Renovation</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-name">Sadashivanagar Transformation</h3>
+          <p class="project-detail">Sadashivanagar, Bangalore · Luxury Villa</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal" data-category="kitchen">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=900&q=80&auto=format&fit=crop" alt="Brigade Gateway Kitchen" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Kitchen</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-name">Brigade Gateway Apt.</h3>
+          <p class="project-detail">Rajajinagar, Bangalore · Island Kitchen</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal reveal-delay-1" data-category="bedroom">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=900&q=80&auto=format&fit=crop" alt="Luxury Bedroom Suite" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Bedroom Suite</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-name">Divyasree Chambers</h3>
+          <p class="project-detail">Langford Town, Bangalore</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+      <div class="project-item reveal reveal-delay-2" data-category="villa">
+        <div class="project-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80&auto=format&fit=crop" alt="Whitefield Luxury Home" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-cat">Full Home</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-name">Whitefield Luxury Home</h3>
+          <p class="project-detail">EPIP Zone, Bangalore · 6,500 sq ft</p>
+          <div class="project-hover-btn">View Project →</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-more reveal">
+      <a href="#contact" class="btn btn-primary"><span>View All 250+ Projects</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     PROCESS
+══════════════════════════════════ -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <span class="section-label">How We Work</span>
+      <h2 class="section-title">Our Design<br><em>Process</em></h2>
+      <p class="section-subtitle">A seamless journey from first conversation to final reveal — six steps to your dream space.</p>
+    </div>
+
+    <div class="process-track">
+      <div class="process-line"></div>
+
+      <div class="process-step reveal">
+        <div class="process-num">01</div>
+        <div class="process-body">
+          <div class="process-icon">💬</div>
+          <h3>Discovery Call</h3>
+          <p>A free 45-minute consultation to understand your vision, lifestyle, space dimensions, and budget. We listen before we design.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-num">02</div>
+        <div class="process-body">
+          <div class="process-icon">📐</div>
+          <h3>Concept &amp; Moodboards</h3>
+          <p>Our designers craft multiple concept directions with curated moodboards, colour palettes, material samples, and furniture references.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-num">03</div>
+        <div class="process-body">
+          <div class="process-icon">🖥️</div>
+          <h3>3D Visualisation</h3>
+          <p>Photorealistic 3D renders of every room so you see exactly what your space will look like before execution begins.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal">
+        <div class="process-num">04</div>
+        <div class="process-body">
+          <div class="process-icon">✍️</div>
+          <h3>Design Sign-Off</h3>
+          <p>Review, refine, and approve. We iterate until you're absolutely delighted. Detailed BOQ and transparent pricing provided.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-num">05</div>
+        <div class="process-body">
+          <div class="process-icon">🏗️</div>
+          <h3>Execution</h3>
+          <p>Our trusted craftsmen and project managers bring the design to life with precision, adhering strictly to timelines and quality standards.</p>
+        </div>
+      </div>
+
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-num">06</div>
+        <div class="process-body">
+          <div class="process-icon">🎉</div>
+          <h3>Final Handover</h3>
+          <p>A styled, fully complete space is handed over to you. We do a final walkthrough and provide a 1-year workmanship warranty.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     WHY CHOOSE US
+══════════════════════════════════ -->
+<section id="why-us">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual reveal">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=85&auto=format&fit=crop" alt="Aura Space design excellence" loading="lazy" />
+        <div class="why-quote-card">
+          <div class="quote-mark">"</div>
+          <p>Spaces should tell the story of who you are, and be a collection of what you love.</p>
+          <cite>— Priya Menon, Founder, Aura Space</cite>
+        </div>
+        <div class="why-badge-row">
+          <div class="why-badge">
+            <span class="badge-num">₹500Cr+</span>
+            <span class="badge-label">Projects Delivered</span>
+          </div>
+          <div class="why-badge">
+            <span class="badge-num">28</span>
+            <span class="badge-label">Team Members</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">Design Excellence<br>You Can <em>Trust</em></h2>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <div class="feature-body">
+              <div class="feature-title">Fully Customised Designs</div>
+              <div class="feature-desc">No templates, no shortcuts. Every design is crafted from scratch around your lifestyle, tastes, and home's unique architecture.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <div class="feature-body">
+              <div class="feature-title">3D Visualisation Before Execution</div>
+              <div class="feature-desc">See your home before a single nail is hammered — photorealistic 3D renders ensure you love it before we build it.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <div class="feature-body">
+              <div class="feature-title">On-Time, On-Budget Delivery</div>
+              <div class="feature-desc">Detailed project timelines, transparent pricing, zero surprise costs, and a dedicated project manager on every job.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <div class="feature-body">
+              <div class="feature-title">End-to-End Service</div>
+              <div class="feature-desc">From concept and planning to execution, procurement, and final styling — we handle everything so you don't have to.</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">05</div>
+            <div class="feature-body">
+              <div class="feature-title">1-Year Workmanship Warranty</div>
+              <div class="feature-desc">We stand behind every nail, joint, and finish. Our warranty ensures complete peace of mind well after handover.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     BRANDS / PARTNERS
+══════════════════════════════════ -->
+<section id="brands">
+  <div class="container">
+    <div class="brands-header reveal">
+      <span class="section-label">Trusted Partners</span>
+      <p>We work with only the finest brands in furniture, materials, and fixtures</p>
+    </div>
+    <div class="brands-grid reveal">
+      <div class="brand-item">Häfele</div>
+      <div class="brand-item">Hettich</div>
+      <div class="brand-item">Asian Paints</div>
+      <div class="brand-item">Duravit</div>
+      <div class="brand-item">Grohe</div>
+      <div class="brand-item">Kohler</div>
+      <div class="brand-item">Godrej Interio</div>
+      <div class="brand-item">Merino</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <span class="section-label">Client Stories</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-subtitle">Real homes. Real transformations. Real happiness.</p>
+    </div>
+
+    <div class="testimonials-slider reveal">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&auto=format&fit=crop&crop=face" alt="Ravi Nair" loading="lazy" />
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Aura Space completely transformed our 3BHK in Whitefield. The team understood our vision instantly and delivered a space that's even more beautiful than we imagined. The 3D visualisation gave us complete confidence before work began. Delivered 3 days early!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Ravi &amp; Priya Nair</div>
+            <div class="author-role">Homeowners, Whitefield · 3BHK, 1,800 sq ft</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80&auto=format&fit=crop&crop=face" alt="Arjun Mehta" loading="lazy" />
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Our startup office went from a blank floor to a world-class workspace in just six weeks. The team's attention to brand identity in the design was exceptional. Every client who walks in is genuinely impressed. Our employees absolutely love coming to work now."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Arjun Mehta</div>
+            <div class="author-role">Founder, TechVerse — Koramangala · 5,000 sq ft</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&q=80&auto=format&fit=crop&crop=face" alt="Sunita Krishnaswamy" loading="lazy" />
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The modular kitchen they designed for us is a masterpiece of organisation and style. Everything has a place, it's incredibly easy to clean, and it looks straight out of a magazine. Priya from the design team was brilliant throughout. Worth every rupee."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Sunita Krishnaswamy</div>
+            <div class="author-role">Villa Owner, Jayanagar · Modular Kitchen</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80&auto=format&fit=crop&crop=face" alt="Karthik Sharma" loading="lazy" />
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Professional, creative, and highly reliable. The Aura Space team kept us informed at every step and delivered our full home renovation on time and within budget. The attention to detail in the final styling was what really set them apart from other studios."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Karthik &amp; Deepa Sharma</div>
+            <div class="author-role">Homeowners, Indiranagar · Full Home Renovation</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-img">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&auto=format&fit=crop&crop=face" alt="Meghna Rao" loading="lazy" />
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I was very particular about my bedroom design — I had a clear vision and they not only understood it but elevated it beautifully. The custom wardrobe they built is a work of art. I recommend Aura Space to everyone who asks about my home."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-name">Meghna Rao</div>
+            <div class="author-role">Homeowner, Koramangala · Master Bedroom Suite</div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="testimonial-prev" id="testimPrev" aria-label="Previous">←</button>
+      <button class="testimonial-next" id="testimNext" aria-label="Next">→</button>
+
+      <div class="testimonial-dots" aria-hidden="true">
+        <button class="t-dot active"></button>
+        <button class="t-dot"></button>
+        <button class="t-dot"></button>
+        <button class="t-dot"></button>
+        <button class="t-dot"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     CONTACT
+══════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-header reveal">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's Design Your<br><em>Dream Space</em></h2>
+      <p class="section-subtitle">Ready to transform your space? Book a free 45-minute consultation and let our design experts bring your vision to life.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-form-wrap reveal reveal-delay-1">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="hello@email.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service…</option>
+                <option>Home Interior Design</option>
+                <option>Modular Kitchen</option>
+                <option>Office Design</option>
+                <option>Renovation &amp; Makeover</option>
+                <option>3D Visualisation</option>
+                <option>Custom Furniture</option>
+                <option>Full Home Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select budget…</option>
+                <option>₹5L – ₹10L</option>
+                <option>₹10L – ₹25L</option>
+                <option>₹25L – ₹50L</option>
+                <option>₹50L – ₹1Cr</option>
+                <option>₹1Cr+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" name="message" rows="4" placeholder="Space size, style preferences, timeline, specific requirements…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold form-submit">
+            <span>Send Message &amp; Book Free Consultation</span>
+          </button>
+          <p class="form-note">✓ Free consultation · ✓ No obligation · ✓ Response within 2 hours</p>
+        </form>
+      </div>
+
+      <div class="contact-info-wrap reveal reveal-delay-2">
+        <div class="contact-info-card">
+          <div class="contact-info-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-detail-label">Studio Location</div>
+              <div class="contact-detail-val">42, 2nd Floor, 100 Feet Road,<br>Indiranagar, Bangalore — 560038</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-detail-label">Phone / WhatsApp</div>
+              <div class="contact-detail-val"><a href="tel:+919876543210">+91 98765 43210</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-val"><a href="mailto:hello@auraspaceinteriors.com">hello@auraspaceinteriors.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:0;">
+            <div class="contact-icon">🕒</div>
+            <div>
+              <div class="contact-detail-label">Studio Hours</div>
+              <div class="contact-detail-val">Mon – Sat: 10 AM – 7 PM<br>Sunday: By Appointment Only</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8440099494837!2d77.63844!3d12.9784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae168e5cf0e5e7%3A0x4a6d3e3b3d3a3b3a!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Aura Space Interiors location map"
+          ></iframe>
+        </div>
+
+        <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20interior%20design%20services%20from%20Aura%20Space%20Interiors."
+           target="_blank" rel="noopener"
+           class="whatsapp-cta-card">
+          <div class="wa-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </div>
+          <div>
+            <strong>Chat on WhatsApp</strong>
+            <span>Get a reply in minutes</span>
+          </div>
+          <div class="wa-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">✦</span>
+            <div>
+              <span class="logo-main">AURA SPACE</span>
+              <span class="logo-sub">Interiors · Bangalore</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Designing Spaces That Inspire Living.<br>Bangalore's most trusted interior design studio since 2016.</p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Home Interiors</a></li>
+            <li><a href="#services">Modular Kitchen</a></li>
+            <li><a href="#services">Office Design</a></li>
+            <li><a href="#services">Renovation</a></li>
+            <li><a href="#services">3D Visualisation</a></li>
+            <li><a href="#services">Custom Furniture</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Client Stories</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#contact">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Newsletter</div>
+          <p class="footer-newsletter-desc">Get design inspiration, trends, and exclusive offers delivered to your inbox.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter" />
+            <button class="btn btn-gold newsletter-btn" aria-label="Subscribe"><span>→</span></button>
+          </div>
+          <div class="footer-certifications">
+            <div class="cert-badge">✦ IDA Member</div>
+            <div class="cert-badge">✦ IGBC Certified</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="footer-copy">© 2024 Aura Space Interiors Pvt. Ltd. All rights reserved. CIN: U74999KA2016PTC000000</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="whatsapp-float"
+   href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20interior%20design%20services."
+   target="_blank" rel="noopener"
+   aria-label="Chat on WhatsApp">
+  <div class="wa-tooltip">Chat with us!</div>
+  <div class="wa-btn">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </div>
+</a>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
