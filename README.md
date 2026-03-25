@@ -80,7 +80,7 @@ The website follows a **modern luxury design system** with smooth transitions an
 1. Download or clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/aura-space-interiors.git
+   git clone https://github.com/uday-dev-coder/FUTURE_FS_03
    ```
 
 2. Open the project folder
